@@ -14,8 +14,7 @@
   limitations under the License.-->
 <server description="Sample Liberty server">
 
-    <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}"
-        id="defaultHttpEndpoint">
+    <httpEndpoint httpPort="${default.http.port}" httpsPort="${default.https.port}" host="*" id="defaultHttpEndpoint">
     <tcpOptions soReuseAddr="true"/>
     
     </httpEndpoint>
